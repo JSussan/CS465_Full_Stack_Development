@@ -5,7 +5,8 @@
   "author": "Jonathan Sussan",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "serve": "nodemon server.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -13,7 +14,11 @@
     "express": "~4.16.1",
     "hbs": "^4.2.0",
     "http-errors": "~1.6.3",
+    "mongodb": "^4.4.1",
+    "mongoose": "^5.9.2",
+    "mongosh": "^0.0.1",
     "morgan": "~1.9.1",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "seedgoose": "^2.0.2"
   }
 }
