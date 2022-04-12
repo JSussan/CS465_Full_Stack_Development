@@ -1,8 +1,12 @@
-/* GET homepage */
 const index = (req, res) => {
-    pageTitle = 'Travlr Getaways' + ' - Home';
-    res.render('travel', {title: pageTitle});
+    pageTitle = process.env.npm_package_description + ' - Main';
+    res.render('index', {
+        title: pageTitle,
+        active_nav: {
+            index: true
+        }});
 };
+
 module.exports = {
     index
 };
