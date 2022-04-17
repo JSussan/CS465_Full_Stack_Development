@@ -20,7 +20,6 @@ export class TripDataService {
 
   public addTrip(formData: Trip): Promise<Trip> {
     console.log('Inside TripDataService#addTrip');
-    //console.log(formData);
     const headers = this.getHeaders();
     if(headers == null) {
       return null;
